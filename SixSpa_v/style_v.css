@@ -762,6 +762,9 @@ footer hr{
     .card .back p{
         font-size: 90%;
     }
+    .card .front h3 {   
+        font-size: 100%;
+    }
     /************* C O N T A C T O ****************/
    .map-contacto{
         width: 95%;
@@ -781,6 +784,9 @@ footer hr{
         flex-direction: row;
         width: 100%;
         height: auto;
+    }
+    .nav-menu_item a{
+        font-size: 130%;
     }
     .logo{
         width:35%;
@@ -850,22 +856,32 @@ footer hr{
     .nav-menu_visible{
         right: 0;
     }
-
     /* main */
     .main-index{
         width: 100%;
         height: auto;
         position: inherit;
     }
-    .main-text1{
-        font-size: 1.1em;
+    .slider-section{
+        height: 55vh;
     }
-    .main-text1 h2{
-        margin: 5%;
+    .slider-img{
+        width: 100%;
+        height: 100%;
+    }
+    .main-text1{
+       width: 95%;
     }
     .main-text2{
-        font-size: 1.1em;
-        margin: 5% 0;
+        width: 95%;
+     }
+    .index-img1, .index-img2{
+        width: 95%;
+        height: 90%;
+    }
+    .video-content{
+        margin-top: 5%;
+        padding-bottom: 57%;
     }
     .ubication-text h3{
         line-height: 200%;
@@ -883,51 +899,91 @@ footer hr{
         position: absolute;
         width: 100%;
         height: 100%;
-
     }
-    .services-button{
-        margin: 5% auto;
-    }
-    footer{
-        width: 100%;
-        position: sticky;
-    }
-
     /************S E R V I C I O S*****************/
     .main-servicios{
         width: 100%;
         left: 0;
     }
-    .card {
-        position: relative;
-        width: 90%;
-        height: 50vh;
-        margin: 5%;
-    }
-
-    /************* C O N T A C T O ****************/
-    .main-contacto{
-        width: 100%;
-        left: 0%;
-    }
-    .tittle-contacto{
+    .card .back h3 {
         font-size: 100%;
+        font-weight: bolder;
+    }
+    .face .back{
+        padding: 2%;
+    }
+    /************* C O N T A C T O ****************/
+    .datos_contacto {
+        width: 45%;
+    }
+    .formulario-contacto{
+        width: 45%;
+    }
+    .map-contacto{
+       height: 45vh;
     }
     /***************** R E S E R V A S *****************/
-    .main-reservas{
-        width: 100%;
-        left: 0;
+    .texto-reservas p{
+        font-size: 90%;
+    }
+    .texto-reservas br{
+        display: none;
+    }
+    .calendar {
+        width: 95%; 
+    }
+    .calendar img{
+        padding: 1%;
     }
 }
-
 @media screen and (max-width: 650px){
+    /***************** I N D E X *****************/
+    .nav{
+        height: 100%;
+    }
+    .logo{
+        top: 2%;
+    }
+    .main-text1, .main-text2{
+        font-size: 80%;
+    }
+    .index-img1,.index-img2{
+        height: 90%;
+    }
+    .video{
+        width: 95%;
+        margin: 0 2%;
+    }
+    footer{
+        font-size: 95%;
+        font-weight: normal;
+    }
+    .footer-contacto{
+        width: 40%;
+        margin: 2% 0;
+    }
+    /************* S E R V I C I O S ****************/
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .card:last-child{
+       grid-column: 1 / 3;
+       margin: auto;
+       width: 50%;
+    }
+    .reserva-aqui{
+        font-size: 90%;
+    }
     /************* C O N T A C T O ****************/
     .contacto-general{
         display: block;
         margin: auto;
     }
-    .map-contacto{
-        width: 80%;
+    .datos_contacto {
+        width: 70%;
+        margin: auto;
     }
     .formulario-contacto{
         width: 70%;
@@ -942,7 +998,26 @@ footer hr{
     .formulario-contacto textarea{
         width: 100%;
     }
+    .contacto-redes {
+        font-size: 100%;
+    }
+    /***************** R E S E R V A S *****************/
+    .texto-reservas p{
+        width: 85%;
+        margin: 3% auto;
+    }
+    .texto-reservas br{
+        display: block;
+    }
 }
+
+
+
+/* EDITAR */
+
+
+
+
 @media screen and (max-width: 597px){
     /***************** I N D E X *****************/
     .nav-toggle{
