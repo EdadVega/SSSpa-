@@ -11,8 +11,8 @@
 }
 body{
     font-family:gothic;
-    height: auto;
     width: 100%;
+    height: 100%;
     background-image: linear-gradient(to left top, #ccd3c6, #d7dccf, #e2e5d9, #f6f8ec, #f8f8ed); background-size: cover;
     color: #000;
 }
@@ -103,7 +103,7 @@ body{
 /* Slider - Carousel */
 .container-slider{
     width: 100%;
-    height: auto;
+    height: 100%;
     grid-column: 1/3;
     grid-row: 1/2;
     margin: auto;
@@ -140,9 +140,8 @@ body{
 .slider-img{
     display: block;
     width: 95%;
-    height: auto;
+    height: 100%;
     margin: auto;
-
     background: #e0e0e0;
     box-shadow:  -20px -20px 60px #bebebe,
                  20px 20px 60px #ffffff;
@@ -432,12 +431,12 @@ footer hr{
     grid-template-rows: repeat(3, 1fr);
     margin: 3% 2%;
 }
-.card {
+ .card {
     position: relative;
-    width: 90%;
-    height: 60vh;
+    width: 90%;                    
+    height: 20em;
     margin: 5%;
-}
+    }
 .card .face {
     position: absolute;
     width: 100%;
@@ -862,9 +861,6 @@ footer hr{
         height: auto;
         position: inherit;
     }
-    .slider-section{
-        height: 55vh;
-    }
     .slider-img{
         width: 100%;
         height: 100%;
@@ -938,11 +934,24 @@ footer hr{
 }
 @media screen and (max-width: 650px){
     /***************** I N D E X *****************/
+    .header-leng{
+        left: 60%;
+    }
     .nav{
         height: 100%;
     }
     .logo{
-        top: 2%;
+        top: 4%;
+    }
+    .container-slider{
+        height: 15em;
+        top:  0;
+    }
+    .slider{
+        height: 100%;
+    }
+    .container-slider img{
+        object-fit: contain;
     }
     .main-text1, .main-text2{
         font-size: 80%;
@@ -1011,65 +1020,42 @@ footer hr{
     }
 }
 
-
-
-/* EDITAR */
-
-
-
-
 @media screen and (max-width: 597px){
     /***************** I N D E X *****************/
     .nav-toggle{
         line-height: 250%;
     }
     .logo {
-        top: 0;
-        left: 30%;
+        width: 50%;
+        top: 1%;
+        left: 25%;
     }
     .main-index{
         display: block;
     }
-    .main-text1{
-        padding: 0 5%;
-        color: #1d1d1d;
-        font-weight: bold;
-    }
-    .main-text1 h2{
-        font-weight: bolder;
-    }
-    .img2{
-        width: 85%;
-        padding:2%;
-        border-radius: 0;
-        display: block;
-        margin: 2% auto;
+    .main-text1, .main-text2{
+        width: 80%;
+        margin: 3% auto;
         box-shadow: 15px 14.2px 0.2px -14px #61669e,
         22px 19px 0.9px -14px #6166a0,
         29.1px 26px 2.9px -14px #6f75b6,
         38px 34px 21px -14px #838ad6;
     }
-    .img3{
-        width: 85%;
-        padding:2%;
-        border-radius: 0;
-        display: block;
-        margin: 3% auto 5% auto ;
-        /* box-shadow: -15px 15px 15px #61669e; */
-        box-shadow:
-        -15.9px 14px 0.2px -14px #61669e,
-        -22px 19px 0.9px -14px #6166a0,
-        -29.1px 26px 2.9px -14px #6f75b6,
-        -38px 34px 21px -14px #838ad6;
+    .main-text1 h2, .main-text2 h2{
+       padding-top: 4%;
+       margin: 0;
     }
-    .main-text2{
-        padding: 0 8%;
-        margin: 7% 0;
-        color: #1d1d1d;
-        font-weight: bold;
+    .main-text1 p, .main-text2 p{
+        width: 80%;
     }
-    .main-text2 h2{
-        font-weight: bolder;
+    .main-text1 a, .main-text2 a{
+        padding-bottom: 5%;
+    }
+    .index-img1, .index-img2{
+        width: 80%;
+        height: 50vh;
+        margin: 5% auto;
+
     }
     .video-content{
         padding-bottom: 60%;
@@ -1078,48 +1064,50 @@ footer hr{
     }
     .video{
         border-radius: 28px;
-        box-shadow:  -8px -8px 16px #4d517d,
-        8px 8px 16px #b3b6d1;
     }
     .ubication-text{
-        margin-top: 5%;
+        margin: 2% 0;
         color: #1d1d1d;
     }
     .ubication-text p{
-        font-weight: bold;
+        font-size: 130%;
     }
     .ubication-map{
         padding-bottom: 60%;
-      }
-
+    }
     .services-button{
-        font-size: 100%;
+        margin: 5% auto;
     }
     /* FOOTER */
     footer{
         display:block;
     }
-    footer hr{
-        display: block;
-        margin: auto;
-        width: 50%;
-    }
+   
     .footer-logo{
-        width: 35%;
+        width: 40%;
         margin: auto;
     }
     .footer-logo p{
         width: 100%;
     }
     .footer-contacto{
-        margin: 10% 0;
+        margin: 5% auto;
+        font-size: 110%;
     }
-    .footer-redes{
-        margin: 0;
+    .footer-contacto hr{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .footer-redes hr{
+        display: block;
+        margin: auto;
+        width: 50%;
     }
     .footer-redes h2{
-        font-size: 130%;
-        margin: 5% 0;
+        font-size: 140%;
+        margin-top: 3%;
+        margin-bottom: 0;
     }
     .footer-redes_sociales{
         justify-content: space-evenly;
@@ -1135,35 +1123,92 @@ footer hr{
         width: 80%;
         margin: 4% auto;
     }
-    /************* C O N T A C T O ****************/
-    .datos_contacto h2, p{
-        margin: auto;
+    .card:first-child img{
+        object-fit: cover;
+        object-position: 0 80%;
     }
-
-
+    .card:nth-child(3) img{
+        object-fit: cover;
+        object-position: 0 30%;
+    }
+    .card:nth-child(4) img{
+        object-fit: cover;
+        object-position: 0 30%;
+    }
+    .card:nth-child(6) img{
+        object-fit: cover;
+        object-position: 0 40%;
+    }
+    .card:nth-child(7) img{
+        object-fit: cover;
+        object-position: 0 30%;
+    }
+    .card:nth-child(8 ) img{
+        object-fit: cover;
+        object-position: 0 30%;
+    }
+    .card:last-child{
+        width: 80%;
+    }
+    .reserva-aqui button{
+        width: 50%;
+        margin-top: 5%;
+    }
+    /************* C O N T A C T O ****************/
+    .datos_contacto {
+        margin: auto;
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+    .map-contacto{
+        width: 100%;
+    }
     .formulario-contacto{
-        font-size: 110%;
+        font-size: 130%;
     }
     .formulario-contacto textarea{
         width: 100%;
     }
-
+/************* R E S E R V A S  ****************/
+    .btn-reservas{
+        flex-direction: column;
+    } 
+    .btn-reservas button{
+        width: 40%;
+        margin: 2% auto;
+    }
+    .btn-reservas a{
+        font-size: 140%;
+    }
 }
 
 @media screen and (max-width: 476px){
     /***************** I N D E X *****************/
-    .logo{
-        width: 50%;
-        left: 25%
+    .header-leng{
+        left: 55%;
     }
-
+    .nav-menu{
+        height: 85%;
+        top: 13%;
+    }
+    .logo{
+        top: 4%;
+        left: 20%;
+    }
+    .main-text1, .main-text2{
+        font-size: 95%;
+    }
+    .index-img1, .index-img2{
+        height: 35vh;
+    }
     /************S E R V I C I O S*****************/
     .tittle-servicios{
         font-size: 150%;
     }
-   .card .back{
-    padding: 5%;
-   }
+    .card .back{
+        padding: 5%;
+        font-size: 120%;
+    }
     .reserva-aqui{
         width: 100%;
     }
@@ -1189,11 +1234,25 @@ footer hr{
     }
 }
 /************************************************/
+@media screen and (max-width: 415px){
+    .logo{
+        top: 3%;
+    }
+    .main-text1, .main-text2{
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 390px){
+    .logo{
+        top: 4%;
+    }
+}
 @media screen and (max-width: 380px){
     /***************** I N D E X *****************/
     .logo{
         width: 65%;
         left: 16%;
+        top: 2%;
     }
     .slider-btn{
         font-size: 150%;
@@ -1201,7 +1260,7 @@ footer hr{
         width: 8%;
     }
     .main-text1, .main-text2{
-        font-size: 100%;
+        font-size: 90%;
     }
     .ubication-text{
         font-size: 100%;
@@ -1219,26 +1278,78 @@ footer hr{
     .services-button{
         font-size: 100%;
     }
+     .card .back{
+        font-size: 105%;
+    }
 }
 /* *******************************************************/
 @media screen and (max-width: 310px){
     /***************** I N D E X *****************/
-    .logo{
-        width: 75%;
-        left: 5%;
+    .logo {
+        width: 46%;
+        left: 20%;
+        top: 5%;
+    }
+    .logo img {
+        width: 73%;
+    }
+    .nav-menu {
+        height: 61%;
+        top: 13%;
+    }
+    .header-leng{
+        left: 45%;
+    }
+    .container-slider{
+        height: 20%;
+    }
+    .main-text1, .main-text2{
+        font-size: 70%;
+    }
+    .index-img1, .index-img2{
+        height: 70%;
+    }
+    .ubication-text{
+        font-size: 90%;
     }
     .card{
         height: 40vh;
     }
+    .services-link{
+        font-size: 80%;
+        margin: 10% 0;
+    }
     .reserva-aqui{
         font-size: 100%;
+    }
+    .datos_contacto{
+        font-size: 120%;
+    }
+    .formulario-contacto {
+        font-size: 120%;
+    }
+    .map-contacto {
+        height: 30vh;
+    }
+    .contacto-redes {
+        font-size: 90%;
+    }
+    .footer-logo img{
+        width: 90%;
+    }
+    .footer-logo img {
+        width: 130%;
+        margin-left: -20%;
     }
 }
 /********************************************************/
 @media screen and (max-width: 270px){
     /***************** I N D E X *****************/
     .logo {
-        width: 80%;
+        width: 50%;
+    }
+    .main-text1, .main-text2{
+        font-size: 61%;
     }
     .reserva-aqui h2{
         font-size: 130%;
@@ -1247,7 +1358,10 @@ footer hr{
 @media screen and (max-width: 240px){
     /***************** I N D E X *****************/
     .logo{
-        width: 95%;
+        width: 45%;
+    }
+    .header-leng{
+        left: 35%;
+        font-size: 90%;
     }
 }
-
