@@ -36,9 +36,9 @@ body{
     margin: 3.5% auto;
 }
 .nav-menu{
-    width: 60%;
+    width: 40%;
     display: flex;
-    margin-left: 20%;
+    margin:0 auto;
 }
 .nav-menu li{
     text-align: center;
@@ -54,14 +54,24 @@ body{
                 inset 23px 23px 46px #939300;
 }
 .header-leng{
-    font-family:gothic;
-    font-size: 100%;
-    margin: 1%;
-    padding: .5%;
-    border: none;
-    background-color: transparent;
-    color:#434B4D;
+    width: 10%;
+    margin: auto 1%;
 }
+.leng, .leng-content{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.leng-content{
+    background-color: red;
+}
+/* MODIFICAR EL LENG CON UN HOVER 
+https://www.youtube.com/watch?v=ZhiSV-zPBzI */
+
+
+
+
+
 
 .nav-menu a{
     font-family:gothic;

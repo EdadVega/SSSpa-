@@ -7,7 +7,6 @@ navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 });
 
-
 //Slider
 
 const slider = document.querySelector("#slider");
