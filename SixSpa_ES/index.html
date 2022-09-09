@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style_v.css">
+    <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7e5b2d153f.js"crossorigin="anonymous"></script> 
     <link rel="icon" href="../Imagenes/Logo-ico.ico">
     <title>Sixthsense - Inicio</title>
-    <script defer src="index_v.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body class="body-index">
     <header class="header"> 
@@ -19,10 +19,10 @@
             <button class="nav-toggle">  
                 <i class="fas fa-bars"></i>
             </button>
-            <a href="index_v.html" class="logo nav_list"><img src="../Imagenes/nombre1.png" alt="logo"></a>
+            <a href="index.html" class="logo nav_list"><img src="../Imagenes/nombre1.png" alt="logo"></a>
             <ul class="nav-menu" >
                 <li class="nav-menu_item">
-                    <a href="index_v.html" class="nav_list nav-menu_link">Inicio</a>
+                    <a href="index.html" class="nav_list nav-menu_link">Inicio</a>
                 </li>
                 <li class="nav-menu_item">
                     <a href="servicios.html" class="nav_list nav-menu_link">Servicios</a>
@@ -31,14 +31,16 @@
                     <a href="contacto.html" class="nav_list nav-menu_link">Contácto</a>
                 </li>
                 <li class="nav-menu_item">
-                    <a href="Reservas_v.html" class="nav_list nav-menu_link">Reservas</a>
+                    <a href="Reservas.html" class="nav_list nav-menu_link">Reservas</a>
                 </li>
             </ul>
-                <select class="header-leng">
-                    <option disabled></option>
-                    <option value="Es">Español</option>
-                    <option value="En">English</option>
-                </select>
+                <form>
+                    <select class="header-leng">
+                        <option value="disable"></option>
+                        <option value="Es"><a href="contacto.html">Español</a></option>
+                        <option value="En"><a href="../SixSpa_EN/Home.html">English</a></option>
+                    </select>
+                </form>
         </nav>
     </header>
 <main class="main-index">

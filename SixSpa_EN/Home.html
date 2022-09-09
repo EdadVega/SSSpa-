@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js"crossorigin="anonymous"></script> 
+    <link rel="icon" href="../Imagenes/Logo-ico.ico">
+    <title>Sixthsense - Home</title>
+    <script defer src="index.js"></script>
+</head>
+<body class="body-index">
+    <header class="header"> 
+        <nav class="nav">
+            <button class="nav-toggle">  
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="index.html" class="logo nav_list"><img src="../Imagenes/nombre1.png" alt="logo"></a>
+            <ul class="nav-menu" >
+                <li class="nav-menu_item">
+                    <a href="index.html" class="nav_list nav-menu_link">Inicio</a>
+                </li>
+                <li class="nav-menu_item">
+                    <a href="servicios.html" class="nav_list nav-menu_link">Servicios</a>
+                </li>
+                <li class="nav-menu_item">
+                    <a href="contacto.html" class="nav_list nav-menu_link">Contácto</a>
+                </li>
+                <li class="nav-menu_item">
+                    <a href="Reservas.html" class="nav_list nav-menu_link">Reservas</a>
+                </li>
+            </ul>
+                <select class="header-leng">
+                    <option disabled></option>
+                    <option value="Es">Español</option>
+                    <option value="En">English</option>
+                </select>
+        </nav>
+    </header>
+<main class="main-index">
+<!-- SLIDER -->
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider-section">
+                <img src="../Imagenes/banner-101.jpg" alt="" class="slider-img">
+            </div>
+            <div class="slider-section">
+                <img src="../Imagenes/banner-102.jpg" alt="" class="slider-img">
+            </div>
+            <div class="slider-section">
+                <img src="../Imagenes/banner-103.jpg" alt="" class="slider-img">
+            </div>
+            <div class="slider-section">
+                <img src="../Imagenes/banner-100.jpg" alt="" class="slider-img">
+            </div>
+<!-- La primera img del Slider que se muestra en la web, es la última en HTML (banner-100); para funcionalidad del JS-->
+        </div>
+        <div class="slider-btn slider-btn_right" id="btn-right">></div>
+        <div class="slider-btn slider-btn_left" id="btn-left"><</div>
+    </div>
+    <!-- Imagenes y texto-->
+    <div class="main-text1">
+        <h2>EXPERIENCIA SENSORIAL</h2>
+        <p>Es realizado con una novedosa técnica, que hace que los sentidos se activen y por esto estimulan la circulación sanguínea, logrando que alcance una máxima relajación.</p>
+        <a href="servicios.html">Más información</a>
+    </div>
+    <div class="main-text2">
+        <h2>EXPERIENCIA SENSUAL FEET</h2>
+        <p>Es un antiguo arte que cuál cambiará tu forma de ver el masaje. Es una terapia muy completa, ideal para quienes quieran experimentar sensaciones nuevas y emocionantes.</p>
+        <a href="servicios.html">Más información</a>
+    </div>
+        <div class="index-img1">
+            <img class="img1" src="../Imagenes/Servicios/pr1.jpg" alt="">
+        </div>
+        <div class="index-img2">
+            <img  class="img2" src="../Imagenes/Servicios/pr2.jpg" alt="">
+        </div>
+    
+    <div class="video-content">
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/7kaesUZm4Sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<!-- Mapa y contacto -->
+        <div class="ubication-text">
+            <h3>Nuestra Sede</h3>
+            <p>Cra. 30 #10C-228 - Mall Interplaza<br>Medellín - Colombia.</p>
+            <p>Tel. +57 314 538 9185</p>
+            <p>@Sixsense_med</p>
+        </div>  
+        <div class="ubication-map">
+            <iframe class="frame-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.540704427996!2d-75.5589736!3d6.2128253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1cd8b730fe1c6170!2sMall%20Interplaza!5e0!3m2!1ses!2sco!4v1661184556294!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+    <!-- Enlace servicios -->
+    <div class="services-link">
+            <button class="services-button"><a href="servicios.html">Nuestros Servicios</a></button>
+    </div>
+</main>
+<!-- FOOTER-->
+<footer>
+    <div class="footer-logo">
+        <img src="../Imagenes/logotipo.png" alt="">
+        <p>Todo los derechos reservados</p>
+    </div>
+    <div class="footer-contacto">
+        <hr>
+        <h2>Contacto</h2>
+        <p>Cra. 30 #10C-228 - Mall Interplaza, El Poblado</p>
+        <p>Tel. +57 314 538 9185</p>
+        <p>@Sixsense_med</p>
+    </div> 
+    <div class="footer-redes">
+        <hr>
+        <h2>Redes Sociales</h2>
+            <div class="footer-redes_sociales">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-// Nav-Menu resposive 
+// Toogle - Nav-Menu resposive 
 
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");

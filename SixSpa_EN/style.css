@@ -659,17 +659,16 @@ footer hr{
     font-weight: bolder;
 }
 .calendar{
-    width: 90%;
-    height: auto;
+    width: 95%;
+    height: 35em;
     margin: 3% auto;
     background: rgba(0, 0, 0, 0.498);
     border-radius: 10px;
 }
-.calendar img{
+.agenda-reservas{
     width: 100%;
-   padding: 2%;
+    height: 100%;
    display: block;
-   margin: auto;
 }
 .btn-reservas{
     width: 100%;
