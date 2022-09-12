@@ -55,7 +55,7 @@ body{
 }
 .header-leng{
     width: 10%;
-    margin: auto 1%;
+    margin: 3% 1%;
 }
 .leng, .leng-content{
     list-style: none;
@@ -63,15 +63,22 @@ body{
     margin: 0;
 }
 .leng-content{
-    background-color: red;
+    height: 50%;
+    position: absolute;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: .3%;
+    z-index: 100;
+    margin: .3% auto;
 }
-/* MODIFICAR EL LENG CON UN HOVER 
-https://www.youtube.com/watch?v=ZhiSV-zPBzI */
-
-
-
-
-
+.leng-content li{
+    margin-left: 30%;
+}
+.leng:hover .leng-content{
+    opacity: 1;
+    visibility: visible;
+}
 
 .nav-menu a{
     font-family:gothic;
@@ -674,6 +681,7 @@ footer hr{
     margin: 3% auto;
     background: rgba(0, 0, 0, 0.498);
     border-radius: 10px;
+    border: 1px #000 solid;
 }
 .agenda-reservas{
     width: 100%;
@@ -822,6 +830,7 @@ footer hr{
     }
     .header-leng{
         position: relative;
+        top: 25%;
         left: 70%;
         margin-top: 2%;
     }
@@ -944,7 +953,8 @@ footer hr{
 @media screen and (max-width: 650px){
     /***************** I N D E X *****************/
     .header-leng{
-        left: 60%;
+        left: 70%;
+        width: 50%;
     }
     .nav{
         height: 100%;
