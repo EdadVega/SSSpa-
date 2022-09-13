@@ -1,8 +1,0 @@
-colores: 
-Gris oscuro: #2d2d2d
-Gris menos oscuro: #565656
-Texto: #ffffff
-Gris claro botones y hoover: #a9abb
-
-Century es la tipografía
-Los menus van en bold, el texto informativo va en regular
